@@ -314,10 +314,11 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = PC;
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Panic Inc.";
 				TargetAttributes = {
 					1A791DAC18442884000943E4 = {
+						DevelopmentTeam = 3MXD5J8GME;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -498,6 +499,7 @@
 			baseConfigurationReference = 1AB7870818FEDFDA000DDB61 /* PunchClock_Debug.xcconfig */;
 			buildSettings = {
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -514,10 +516,14 @@
 			baseConfigurationReference = 0B80FF4B46B02D053612EDEF /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PunchClock/PunchClock-Prefix.pch";
 				INFOPLIST_FILE = "PunchClock/PunchClock-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -527,10 +533,14 @@
 			baseConfigurationReference = 09F295D1F09C9A231E43156E /* Pods.beta.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PunchClock/PunchClock-Prefix.pch";
 				INFOPLIST_FILE = "PunchClock/PunchClock-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d69d1564-f6cb-42e0-bb03-17a93aa81319";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Beta;
